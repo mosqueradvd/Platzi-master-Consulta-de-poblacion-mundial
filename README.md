@@ -15,3 +15,4 @@ Facilitar la visualización de información a través de una plataforma web para
 [@hectormartinezresendiz](https://github.com/HectorMartinezResendiz)
 [@efrenmartinez](https://github.com/efrenmartinez)
 [@JesusWisord](https://github.com/JesusWisord)
+[@StiveJimenez](https://github.com/stivenjimenez)
