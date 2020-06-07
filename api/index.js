@@ -10,12 +10,13 @@ const init = async () => {
   });
 
   try {
+    server.realm.modifiers.route.prefix = "/v1";
     server.route(routes);
     await server.start();
   } catch (error) {
     console.error(error);
   }
-  console.log(`Servidor lanzado en: ${server.info.uri}`);
+  console.log(`Servidor lanzado en: ${server.info.uri}/v1`);
 };
 
 // lo mando cuando una promesa causa error
