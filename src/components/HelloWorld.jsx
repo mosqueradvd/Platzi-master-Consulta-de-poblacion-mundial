@@ -3,7 +3,7 @@ import "../assets/styles/App.scss";
 
 const HelloWorld = () => (
   <div>
-    <h1>Hello World CAMBIOS DE RODOLFO, Lennin</h1>
+    <h1>Hello World OTRO CAMBIO DE RODOLFO</h1>
   </div>
 );
 
