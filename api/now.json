@@ -1,6 +1,6 @@
 {
   "name": "populations",
-  "version": 1,
+  "version": 2,
   "builds": [
     {
       "src": "index.js",
@@ -15,6 +15,7 @@
   ],
   "env": {
     "PORT": "@populations-port",
+    "CORS": "*",
     "DB_USER": "@populations-db-user",
     "DB_PASSWORD": "@populations-db-password",
     "DB_HOST": "@populations-db-host",
