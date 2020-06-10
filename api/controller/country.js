@@ -16,9 +16,27 @@ async function addCountry(request, h) {
 
 async function getCountries(request, h) {
   try {
-    // Buscar todos los objetos
-    const countries = await Countries.find();
-    return h.response(countries).code(200);
+    const page = parseInt(request.query.page || 1);
+    const limit = parseInt(request.query.limit || 10);
+
+    const count = await Countries.countDocuments();
+    
+    const skip = page > 1 ? page * limit : 0;
+    const lastPage = Math.abs(count / limit).toFixed(0);
+
+    const items = await Countries.find().skip(skip).limit(limit).exec();
+    const pagination = {
+      total: count,
+      perPage: limit,
+      page: page,
+      lastPage: lastPage,
+    };
+
+    const response = {
+      items: items,
+      pagination: pagination,
+    };
+    return h.response(response).code(200);
   } catch (error) {
     return h.response(error).code(500);
   }
@@ -28,8 +46,6 @@ async function getCountry(request, h) {
   try {
     // Buscar por id
     const country = await Countries.findById(request.params.id);
-    // await Countries.findOne({year: 2020})
-    // await Countries.findOne({ year: 2020 }, { country: 1 })
     return h.response(country).code(200);
   } catch (error) {
     return h.response(error).code(500);
