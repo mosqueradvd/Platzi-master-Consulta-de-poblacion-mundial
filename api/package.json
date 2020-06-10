@@ -23,7 +23,6 @@
     "dotenv": "^8.2.0"
   },
   "devDependencies": {
-    "nodemon": "^2.0.3",
-    "hapi-mongodb": "^9.0.0"
+    "nodemon": "^2.0.3"
   }
 }
