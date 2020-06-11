@@ -1,13 +1,15 @@
 import React, { useState, useEffect } from 'react';
 import TopTenCountriesChart from '../components/TopTenCountriesChart';
 
-// const API = 'http://localhost:3000/initalState';  // LLAMADA A API PARA LAS CONSULTAS
+{ /* LLAMADA A API PARA LAS CONSULTAS */ }
+{ /* const API = 'http://localhost:3000/initalState'; */ }
 
-const App = () => {
-  <div className='App'>
+const App = () => (
+  <div>
     <TopTenCountriesChart />
-  </div>;
-};
+  </div>
+
+);
 
 export default App;
 

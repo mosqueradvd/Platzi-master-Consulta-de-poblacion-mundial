@@ -4,7 +4,7 @@ import {
   AreaChart, Area, XAxis, YAxis, CartesianGrid, Tooltip,
 } from 'recharts';
 
-/* const TopTenCountriesChart = ({ data }) => ( */
+{/* const TopTenCountriesChart = ({ data }) => ( */}
 const TopTenCountriesChart = () => {
 
   const data = [
