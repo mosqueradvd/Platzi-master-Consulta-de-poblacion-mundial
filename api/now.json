@@ -1,0 +1,25 @@
+{
+  "name": "populations",
+  "version": 2,
+  "builds": [
+    {
+      "src": "index.js",
+      "use": "@now/node"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/(.*)",
+      "dest": "/index.js"
+    }
+  ],
+  "env": {
+    "PORT": "@populations-port",
+    "CORS": "*",
+    "DB_USER": "@populations-db-user",
+    "DB_PASSWORD": "@populations-db-password",
+    "DB_HOST": "@populations-db-host",
+    "DB_NAME": "@populations-db-name",
+    "DB_PORT": "@populations-db-port"
+  }
+}

@@ -17,9 +17,27 @@ async function createContinent(request, h) {
 // Listar los continentes
 async function getAllContinents(request, h) {
   try {
-    // Buscar todos los objetos
-    const continents = await Continents.find();
-    return h.response(continents).code(200);
+    const page = parseInt(request.query.page || 1);
+    const limit = parseInt(request.query.limit || 10);
+
+    const count = await Continents.countDocuments();
+
+    const skip = page > 1 ? page * limit : 0;
+    const lastPage = Math.abs(count / limit).toFixed(0);
+
+    const items = await Continents.find().skip(skip).limit(limit).exec();
+    const pagination = {
+      total: count,
+      perPage: limit,
+      page: page,
+      lastPage: lastPage,
+    };
+
+    const response = {
+      items: items,
+      pagination: pagination,
+    };
+    return h.response(response).code(200);
   } catch (error) {
     return h.response(error).code(500);
   }
