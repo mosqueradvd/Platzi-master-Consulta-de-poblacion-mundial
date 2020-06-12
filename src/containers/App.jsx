@@ -1,15 +1,19 @@
 import React from 'react';
 import TopTenCountriesChart from '../components/TopTenCountriesChart';
+import useInitialState from '../hooks/useInitialState';
 
-{/* LLAMADA A API PARA LAS CONSULTAS */}
-{/* const API = 'http://localhost:3000/initalState'; */}
+const API = 'https://populations.hectormartinezresendiz.now.sh/v1/topcountries';
 
-const App = () => (
-  <di>
-    <div className='App'>
-      <TopTenCountriesChart />
+const App = () => {
+  const initialState = useInitialState(API);
+  console.log(useInitialState(API));
+  return (
+    <div>
+      <div className='App'>
+        <TopTenCountriesChart data={initialState} />
+      </div>
     </div>
-  </di>
-);
+  );
+};
 
 export default App;
