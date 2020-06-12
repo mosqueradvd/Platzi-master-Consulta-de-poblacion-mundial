@@ -11,6 +11,12 @@ module.exports = [
   },
   // Listar los países
   {
+    config: {
+      cors: {
+        origin: ['*'],
+        additionalHeaders: ['cache-control', 'x-requested-with'],
+      },
+    },
     method: 'GET',
     path: '/topcountries',
     handler: topCountry.getAllTopCountries,
