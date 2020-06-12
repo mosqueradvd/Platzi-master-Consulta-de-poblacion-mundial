@@ -1,4 +1,4 @@
-'use strict';
+'use strict'
 
 const continent = require('./continent');
 const country = require('./country');
