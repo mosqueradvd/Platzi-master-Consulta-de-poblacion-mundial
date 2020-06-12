@@ -5,6 +5,12 @@ const topCountry = require('../controller/topCountry');
 module.exports = [
   // Agregar el continente
   {
+    config: {
+      cors: {
+        origin: ['*'],
+        additionalHeaders: ['cache-control', 'x-requested-with'],
+      },
+    },
     method: 'POST',
     path: '/addtopcountries',
     handler: topCountry.createTopCountries,
