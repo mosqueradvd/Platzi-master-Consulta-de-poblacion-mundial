@@ -4,7 +4,7 @@ import {
   LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, Legend,
 } from 'recharts';
 
-/* const TopTenCountriesChart = () => { */
+
 const TopTenCountriesChart = ({ data }) => {
   console.log(data);
   return (
