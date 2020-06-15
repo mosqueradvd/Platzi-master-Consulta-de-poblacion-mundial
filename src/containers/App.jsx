@@ -8,6 +8,8 @@ import PopulByRegion from '../components/PopulByRegion';
 
 // const API = 'https://populations.hectormartinezresendiz.now.sh/v1/topcountries';
 
+import '../assets/styles/App.scss';
+
 const App = () => {
   // const initialState = useInitialState(API);
   // console.log(useInitialState(API));

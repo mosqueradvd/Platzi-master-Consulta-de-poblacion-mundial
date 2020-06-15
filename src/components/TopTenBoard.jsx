@@ -6,7 +6,7 @@ const TopTenBoard = () => {
   return (
     <>
       <div className='TopTenBoard'>
-        <h1>Top Ten Board (-.-)/ </h1>
+        {/* <h1>Top Ten Board (-.-)/ </h1> */}
         {/* {countries.map((ctry) => ( */}
         {/* <div className='country__container' key={ctry.id}> */}
         {/* <strong>{ctry.id}</strong> */}

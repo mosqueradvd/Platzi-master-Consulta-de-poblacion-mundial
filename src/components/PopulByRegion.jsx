@@ -5,7 +5,7 @@ import React from 'react';
 const PopulByRegion = () => {
   return (
     <>
-      <h1>World Population by Region</h1>
+      {/* <h1>World Population by Region</h1> */}
     </>
   );
 };
