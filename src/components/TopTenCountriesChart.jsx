@@ -4,7 +4,6 @@ import {
   LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, Legend,
 } from 'recharts';
 
-
 const TopTenCountriesChart = ({ data }) => {
   console.log(data);
   return (
@@ -21,7 +20,6 @@ const TopTenCountriesChart = ({ data }) => {
         <Tooltip />
         <Legend />
         <Line type='monotone' dataKey='population' stroke='#8884d8' activeDot={{ r: 8 }} />
-        
       </LineChart>
     </div>
   );

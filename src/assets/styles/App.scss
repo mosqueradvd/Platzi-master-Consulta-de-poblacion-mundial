@@ -1,3 +1,5 @@
+@import '../styles/Breackpoints.scss';
+
 * {
   margin: 0;
   padding: 0;
@@ -5,5 +7,28 @@
 
 body {
   font-size: 14px;
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'system-ui', sans-serif;
 }
+
+.container{
+  background-color: blue;
+  height: 100vh;
+  display: grid;
+    grid-template: 1fr 100px /1fr;
+    overflow: auto;
+    height: 100vh;
+    grid-template-areas: "contenido"
+                         "footer";
+                         
+  @include media(desktop-s){
+		background-color: red;
+    display: grid;
+    grid-template: 1fr 100px / 150px 1fr;
+    overflow: auto;
+    height: 100vh;
+    grid-template-areas: "left contenido"
+                         "left footer";
+	}
+}
+
+	

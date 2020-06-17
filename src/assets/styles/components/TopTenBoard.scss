@@ -1,0 +1,12 @@
+
+@import '../App.scss';
+@import '../Vars.scss';
+@import '../Breackpoints.scss';
+
+
+.topTenBoard{
+  background-color: $main-color;
+  grid-area: contenido;
+  text-align: center;
+}
+

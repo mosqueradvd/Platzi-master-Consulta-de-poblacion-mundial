@@ -1,10 +1,11 @@
 import React from 'react';
-import '../assets/styles/components/Footer.scss'
+import '../assets/styles/components/Footer.scss';
+
 const Footer = () => {
   return (
     <>
-      <footer>
-        <p>
+      <footer className='footer'>
+        <p className='footer__text'>
           © 2020 POPULAPP
         </p>
       </footer>

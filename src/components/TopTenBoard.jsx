@@ -1,12 +1,13 @@
 // Este componente seria la integracion anterio del comp. Top10Integration.
 
 import React from 'react';
+import '../assets/styles/components/TopTenBoard.scss';
 
 const TopTenBoard = () => {
   return (
     <>
-      <div className='TopTenBoard'>
-        {/* <h1>Top Ten Board (-.-)/ </h1> */}
+      <div className='topTenBoard'>
+        <h1>Top Ten Board (-.-) Aquí van los modulos/ </h1>
         {/* {countries.map((ctry) => ( */}
         {/* <div className='country__container' key={ctry.id}> */}
         {/* <strong>{ctry.id}</strong> */}
