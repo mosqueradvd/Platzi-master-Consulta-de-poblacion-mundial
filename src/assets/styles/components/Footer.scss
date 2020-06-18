@@ -1,13 +1,14 @@
-footer{
-  width: 100vw;
-  height: 100px;
-  display: flex;
-  justify-content: center;
-  align-items: flex-end;
-  background-color: #3B3B3B;
-  p{
-    font-size: 30px;
-    padding-bottom: 30px;
-    color: white;
+@import '../Vars.scss';
+@import '../App.scss';
+
+.footer {
+  grid-area: footer;
+  font-size: 1.2em;
+  text-align: center;
+  background-color: $second-color;
+  color: $font-color;
+  box-shadow: 0px -5px 5px 0px rgba(199,199,199,1);
+  &__text {
+    margin-top: 50px;
   }
 }

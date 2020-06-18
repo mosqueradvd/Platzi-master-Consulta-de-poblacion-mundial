@@ -1,19 +1,12 @@
-@import '../../Globals.scss';
 
-.TopTenBoard {
-  width: 700px;
-  h1 {
-    text-align: center;
-  }
+@import '../App.scss';
+@import '../Vars.scss';
+@import '../Breackpoints.scss';
+
+
+.topTenBoard{
+  background-color: $main-color;
+  grid-area: contenido;
+  text-align: center;
 }
 
-.country__container {
-  display: flex;
-  justify-content: space-between;
-  padding: 0 10px 0 10px;
-  color: $color-variacion;
-  img {
-    width: 30px;
-    height: 15px;
-  }
-}
