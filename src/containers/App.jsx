@@ -22,10 +22,10 @@ const App = () => {
           {/* <TopTenCountriesChart data={initialState} /> */}
           {/* <TopCountriesFlag data={initialState} /> */}
           {/* <PopulByRegion /> */}
+          {/* <TopCountriesFlag data={initialState} />
           <TopCountriesFlag data={initialState} />
           <TopCountriesFlag data={initialState} />
-          <TopCountriesFlag data={initialState} />
-          <TopCountriesFlag data={initialState} />
+          <TopCountriesFlag data={initialState} /> */}
           {/* // TopCountriesFlag repetidos para construir la grilla */}
         </TopTenBoard>
         <Footer />

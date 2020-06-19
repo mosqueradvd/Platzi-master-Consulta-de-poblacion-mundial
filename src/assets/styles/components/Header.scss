@@ -3,34 +3,46 @@
 @import '../App.scss';
 
 .header {
-  
-  display: none;
-  ////////////////
-  @include media(desktop-s){
-    grid-area: left;
-    display: block;
-    background-color: $thrid-color;
-    color: $second-color;
-  text-align: center;
-  &__title{
-    text-transform: uppercase;
-    color: green;
-    // border-bottom:solid 1px $main-color;
-    margin-top: 30px;
-    margin-bottom: 15px;
-  }
-  nav ul li{
-    padding: 30px 0 0 0;
-    a{
+  &__menuCSS3 {
+  background-color: $thrid-color;
+    ul {
+      display: flex;
+      padding: 0;
+      margin: 0;
+      list-style: none;
+    }
+    a {
+      display: block;
+      padding: 1em;
+      background-color: $thrid-color;
       text-decoration: none;
-      color: $gray;
-      font-size: 1em;
-      padding: 0 0 5px 0;
+      color: #9A9A9A;
     }
     a:hover {
-      color: $second-color;
+      background-color: $thrid-color;
+    }
+    ul li ul {
+      display: none;
+    }
+    ul li a:hover + ul, .menuCSS3 ul li ul:hover {
+      display: block;
     }
   }
+
+  @include media(desktop-s){
+    grid-area: left;
+    .header__menuCSS3{
+      height: 100vh;
+        ul {
+        display: block;
+        }
+        ul li ul {
+        display: block;
+        }
+        ul li a:hover + ul, .header__menuCSS3 ul li ul:hover {
+        display: block;
+        }
+    }
   }
 }
 
