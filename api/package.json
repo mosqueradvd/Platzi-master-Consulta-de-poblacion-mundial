@@ -18,13 +18,11 @@
     "@hapi/hapi": "^19.1.1",
     "@hapi/joi": "^17.1.1",
     "body-parser": "^1.19.0",
-    "dotenv": "^8.2.0",
     "mongodb": "^3.5.8",
     "mongoose": "^5.9.18",
-    "node-fetch": "^2.6.0"
+    "dotenv": "^8.2.0"
   },
   "devDependencies": {
-    "nodemon": "^2.0.3",
-    "hapi-mongodb": "^9.0.0"
+    "nodemon": "^2.0.4"
   }
 }

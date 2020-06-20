@@ -1,7 +1,13 @@
 import React from 'react';
 import '../assets/styles/App.scss';
 import {
-  LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, Legend,
+  LineChart,
+  Line,
+  XAxis,
+  YAxis,
+  CartesianGrid,
+  Tooltip,
+  Legend,
 } from 'recharts';
 
 /* const TopTenCountriesChart = () => { */
@@ -20,8 +26,12 @@ const TopTenCountriesChart = ({ data }) => {
         <CartesianGrid strokeDasharray='3 3' />
         <Tooltip />
         <Legend />
-        <Line type='monotone' dataKey='population' stroke='#8884d8' activeDot={{ r: 8 }} />
-        
+        <Line
+          type='monotone'
+          dataKey='population'
+          stroke='#8884d8'
+          activeDot={{ r: 8 }}
+        />
       </LineChart>
     </div>
   );
