@@ -7,6 +7,7 @@ module.exports = {
   output: {
     path: path.resolve(__dirname, 'dist'),
     filename: 'bundle.js',
+    publicPath: '/',
   },
   resolve: {
     extensions: ['.js', '.jsx'],
@@ -45,8 +46,8 @@ module.exports = {
       },
     ],
   },
-  devServer: {  
-    historyApiFallback: true,  
+  devServer: {
+    historyApiFallback: true,
   },
   plugins: [
     new HtmlWebpackPlugin({
@@ -54,7 +55,7 @@ module.exports = {
       filename: './index.html',
     }),
     new MiniCssExtractPlugin({
-      filename: 'assets/[name].css',
+      filename: './assets/[name].css',
     }),
   ],
 };
