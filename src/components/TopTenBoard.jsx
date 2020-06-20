@@ -8,7 +8,7 @@ const TopTenBoard = ({ children }) => {
     <>
       <div className='topTenBoard'>
         <h1>Top Ten Board - Aquí van los modulos/ </h1>
-        {children}
+        {/* {children} */}
       </div>
     </>
   );
