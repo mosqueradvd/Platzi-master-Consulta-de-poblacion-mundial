@@ -1,5 +1,5 @@
 import React from 'react';
-import '../assets/styles/App.scss';
+import '../assets/styles/components/TopCountriesFlag.scss'
 import {
   LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, Legend,
 } from 'recharts';
