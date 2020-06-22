@@ -9,6 +9,9 @@ Facilitar la visualización de información a través de una plataforma web para
  - ***/lib:*** Funciones para utilizar la base de datos y otras utilidades
  - ***/config:*** Configuración de las variables de entorno
  - ***/models:*** Esquemas para los datos de cada entidad para la base de datos.
+ 
+ ### Documentación de la API
+ https://documenter.getpostman.com/view/8511119/Szzeff6X?version=latest
 
 ### Integrantes
 
