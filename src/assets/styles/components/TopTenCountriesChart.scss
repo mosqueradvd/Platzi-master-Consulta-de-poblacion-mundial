@@ -1,0 +1,11 @@
+@import '../App.scss';
+@import '../Vars.scss';
+@import '../Breackpoints.scss';
+
+
+.wrappChart{
+  background-color: $main-color;
+  grid-area: contenido;
+  text-align: center;
+}
+
