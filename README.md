@@ -9,9 +9,6 @@ Populapp es una webapp que **reduce la fricción en la consulta de datos** de la
 
 Populapp nace de la idea de rediseñar <a href="https://www.worldometers.info/world-population/" target="_BLANK"> Worldometers</a>, una página que ya muestra datos de este tipo. Pero con la desventaja de que la visualización de información es desorganizada y poco intuitiva para el usuario. 
 
-
-<iframe class="imgur-embed" width="100%" height="622" frameborder="0" src="https://i.imgur.com/coXPhQh.gifv#embed"></iframe>
-
 <p align="center">
 Worldometer's website
 </p>
@@ -56,11 +53,13 @@ En este caso, Populapp brinda una **presentación de datos más fresca y digerib
 
 * **Webpack** para configuración principal de React. Manejo de plugins es inyección de estilos.
 
-- Preprocesador **Sass** para estilos de la App
+- Preprocesador **Sass** para estilos de la App.
 
 * **ESLint** para un formato de código uniforme al trabajar en equipo.
 
-- **BABEL** (transpilación) para lograr un correcto funcionamiento de la app a través de diferentes navegadores
+- **BABEL** (transpilación) para lograr un correcto funcionamiento de la app a través de diferentes navegadores.
+
+- **React-Router** para menejo de rutas dentro de la app.
 
 <br></br>
  ### **Documentación de la API**
