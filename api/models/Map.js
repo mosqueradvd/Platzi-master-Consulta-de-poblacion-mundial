@@ -1,23 +1,18 @@
-const { Schema, model } = require('mongoose');
+const { Schema, model } = require("mongoose");
 
-const mapSchema = new Schema(
-  {
-    continent: {
-      type: String,
-      required: true,
-    },
-    link: {
-      type: String,
-      required: true,
-    },
-    continentInfo: {
-      type: Array,
-      required: true,
-    },
+const mapSchema = new Schema({
+  type: {
+    type: String,
   },
-  {
-    timestamps: true,
-  }
-);
+  arcs: {
+    type: Array,
+  },
+  transform: {
+    type: Object,
+  },
+  objects: {
+    type: Object,
+  },
+});
 
-module.exports = model('map', mapSchema);
+module.exports = model("map", mapSchema);
