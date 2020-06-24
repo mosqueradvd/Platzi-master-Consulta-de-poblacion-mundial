@@ -25,7 +25,6 @@ const App = () => {
       <div className='container'>
         <Header />
         <TopTenBoard>
-          <TopCountriesFlag />
           <TopTenCountriesChart data={initialState} />
           <WorldPopulationRegion />
           {/* <PopulByRegion /> */}
@@ -35,6 +34,9 @@ const App = () => {
             <WorldPopulationDensity setTooltipContent={setContent} />
             <ReactTooltip>{content}</ReactTooltip>
           </div>
+          <TopCountriesFlag data={initialState} />
+          <TopTenCountriesChart data={initialState} />
+          <WorldPopulationRegion />
         </TopTenBoard>
         <Form />
         <Footer />
