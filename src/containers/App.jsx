@@ -1,9 +1,11 @@
 import React, { useState, useEffect } from 'react';
+import ReactTooltip from "react-tooltip";
 import Header from '../components/Header';
 import TopTenBoard from '../components/TopTenBoard';
 import TopCountriesFlag from '../components/TopCountriesFlag';
 import TopTenCountriesChart from '../components/TopTenCountriesChart';
 import WorldPopulationRegion from '../components/WorldPopulationRegion';
+import WorldPopulationDensity from '../components/WorldPopulationDensity';
 import Footer from '../components/Footer';
 import useInitialState from '../hooks/useInitialState';
 
@@ -14,7 +16,8 @@ const API = 'https://populations.hectormartinezresendiz.now.sh/v1/topcountries';
 
 const App = () => {
   const initialState = useInitialState(API);
-  {/* console.log(useInitialState(API)); */}
+  const [content, setContent] = useState("");
+
   return (
       <div className='container'>
         <Header />
@@ -22,6 +25,10 @@ const App = () => {
         <TopCountriesFlag />
         <TopTenCountriesChart data={initialState} />
         <WorldPopulationRegion />
+        <div>
+          <WorldPopulationDensity setTooltipContent={ setContent } />
+          <ReactTooltip>{content}</ReactTooltip>
+        </div>
         {/* <PopulByRegion /> */}
         {/* <TopCountriesFlag data={initialState} />
         <TopCountriesFlag data={initialState} />
