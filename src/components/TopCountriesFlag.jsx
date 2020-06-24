@@ -1,20 +1,22 @@
 import React from 'react';
-import '../assets/styles/components/TopTenBoard.scss';
+import '../assets/styles/components/TopCountriesFlag.scss';
 
 const TopTenBoard = ({ data }) => {
 
   return (
     <>
-      <div className='TopTenBoard'>
-        <h1>Top Ten Board</h1>
+      <div className='table'>
         <table>
+          <caption>TOP 10 LARGEST COUNTRIESBY POPULATION</caption>
           <thead>
             <tr>
-              <th>No</th>
+              <th className='no'>No</th>
               <th>Flag</th>
               <th>Country</th>
               <th>Population</th>
             </tr>
+          </thead>
+          <tbody>
             {data.map((ctry) => {
               if (ctry.rank <= 10) {
                 return (
@@ -29,7 +31,7 @@ const TopTenBoard = ({ data }) => {
                 );
               }
             })}
-          </thead>
+          </tbody>
         </table>
       </div>
     </>
