@@ -19,7 +19,7 @@ const App = () => {
       <div className='container'>
         <Header />
         <TopTenBoard>
-        <TopCountriesFlag />
+        <TopCountriesFlag data={initialState}/>
         <TopTenCountriesChart data={initialState} />
         <WorldPopulationRegion />
         {/* <PopulByRegion /> */}
