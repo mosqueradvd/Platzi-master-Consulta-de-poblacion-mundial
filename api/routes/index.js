@@ -4,7 +4,8 @@ const continent = require('./continent');
 const country = require('./country');
 const topCountryRouter = require('./topCountryRouter');
 const error = require('./error');
+const map = require('./map');
 
-let routes = [...continent, ...country, ...topCountryRouter, ...error];
+let routes = [...continent, ...country, ...topCountryRouter, ...error, ...map];
 
 module.exports = routes;
