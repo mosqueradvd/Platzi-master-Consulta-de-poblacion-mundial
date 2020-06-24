@@ -1,0 +1,9 @@
+@import '../Breackpoints.scss';
+@import '../Vars.scss';
+@import '../App.scss';
+
+.country_info {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 10px 0 10px;
+}

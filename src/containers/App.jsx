@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import Header from '../components/Header';
 import TopTenBoard from '../components/TopTenBoard';
 import TopCountriesFlag from '../components/TopCountriesFlag';
@@ -26,9 +26,8 @@ const App = () => {
           <TopTenCountriesChart data={initialState} />
           <WorldPopulationRegion />
           {/* <PopulByRegion /> */}
-          {/* <TopCountriesFlag data={initialState} />
-        <TopCountriesFlag data={initialState} /> */}
-          <CountriesPopulYear />
+          {/* <TopCountriesFlag data={initialState} />*/}
+          <CountriesPopulYear data={initialState} />
           <Form />
         </TopTenBoard>
         <Footer />
