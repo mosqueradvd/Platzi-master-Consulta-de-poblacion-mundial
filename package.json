@@ -21,6 +21,8 @@
     "react-dom": "^16.13.1",
     "react-router": "^5.2.0",
     "react-router-dom": "^5.2.0",
+    "react-simple-maps": "^2.1.2",
+    "react-tooltip": "^4.2.7",
     "recharts": "^1.8.5"
   },
   "devDependencies": {
