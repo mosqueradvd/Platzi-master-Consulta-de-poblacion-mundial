@@ -1,0 +1,41 @@
+@import '../Breackpoints.scss';
+@import '../Vars.scss';
+@import '../App.scss';
+
+
+form {
+  color: black;
+  padding: 1.5em;
+  display: inline-block;
+  width: 470px;
+  h2 {
+    font-size: 24px;
+  }
+  input {
+    border-radius: 4px;
+    height: 25px;
+    padding: 5px 10px;
+    outline: none;
+    border: none;
+    display: block;
+    width: 85%;
+    margin: 1.5em;
+    border-bottom: 2px solid greenyellow;
+  }
+  button {
+    border: none;
+    border-radius: 3px;
+    width: 50%;
+    height: 26px;
+    color: #3d5f0a;
+    margin-top: 1em;
+    background-color: #c1f572;
+  }
+  textarea {
+    width: 100%;
+    border: none;
+    padding: 10px 4px;
+    height: 137px;
+    margin: 0px;
+  }
+}

@@ -21,7 +21,7 @@ const TopTenCountriesChart = ({ data }) => {
     });
   });
   return (
-    <div className="wrappChart">
+    <div className="wrappChart" id='#chart'>
       <h1>Top Ten Countries Chart</h1>
       <LineChart
         width={800}

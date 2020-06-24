@@ -1,7 +1,7 @@
 import React from 'react';
 import '../assets/Globals.scss';
 import '../assets/styles/components/Header.scss';
-{/* import logo from '../assets/static/react.svg'; */}
+{/* import logo from '../assets/static/react.svg'; */ }
 
 const Header = () => (
   <header className='header'>
@@ -12,15 +12,23 @@ const Header = () => (
     <nav className='header__menuCSS3'>
       <ul>
         <li>
-          <a href='/'>Menu</a>
+          <a href='#popul'>Menu</a>
           <ul>
-            <li><a href='/'>Statistics</a></li>
-            <li><a href='/'>Top 10</a></li>
             <li>
-              <a href='/'>World Statistics</a>
+              <a href='#statistics'>Statistics</a>
             </li>
-            <li><a href='/'>Map</a></li>
-            <li><a href='/'>Contact</a></li>
+            <li>
+              <a href='#topten'>Top 10</a>
+            </li>
+            <li>
+              <a href='#wstats'>World Statistics</a>
+            </li>
+            <li>
+              <a href='#map'>Map</a>
+            </li>
+            <li>
+              <a href='#contact'>Contact</a>
+            </li>
           </ul>
         </li>
       </ul>

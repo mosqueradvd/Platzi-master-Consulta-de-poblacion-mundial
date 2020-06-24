@@ -1,7 +1,7 @@
-import React from "react";
+import React from 'react';
 
 const TopCountriesFlag = () => (
-  <div className="top__countries">
+  <div className='top__countries'>
     <h1>TOP 10 LARGEST COUNTRIES BY POPULATION</h1>
     <table>
       <thead>
