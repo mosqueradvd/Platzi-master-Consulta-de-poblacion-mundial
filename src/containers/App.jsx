@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import ReactTooltip from "react-tooltip";
 import Header from '../components/Header';
 import TopTenBoard from '../components/TopTenBoard';
@@ -10,13 +10,15 @@ import Form from '../components/Form';
 import WorldPopulationDensity from '../components/WorldPopulationDensity';
 import Footer from '../components/Footer';
 import useInitialState from '../hooks/useInitialState';
+import hook from '../hooks/useInitialState';
 
 import '../assets/styles/App.scss';
-{/* import PopulByRegion from '../components/PopulByRegion'; */ }
 
 const API = 'https://populations.hectormartinezresendiz.now.sh/v1/topcountries';
+const API2 = 'https://populations.hectormartinezresendiz.now.sh/v1/countries';
 
 const App = () => {
+
   const initialState = useInitialState(API);
   const [content, setContent] = useState("");
 
@@ -27,18 +29,14 @@ const App = () => {
         <TopTenBoard>
           <TopTenCountriesChart data={initialState} />
           <WorldPopulationRegion />
-          {/* <PopulByRegion /> */}
-          {/* <TopCountriesFlag data={initialState} />*/}
           <CountriesPopulYear data={initialState} />
           <div>
             <WorldPopulationDensity setTooltipContent={setContent} />
             <ReactTooltip>{content}</ReactTooltip>
           </div>
           <TopCountriesFlag data={initialState} />
-          <TopTenCountriesChart data={initialState} />
-          <WorldPopulationRegion />
+          <Form />
         </TopTenBoard>
-        <Form />
         <Footer />
       </div>
     </>

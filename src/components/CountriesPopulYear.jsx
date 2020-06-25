@@ -1,11 +1,6 @@
 import React from 'react';
-import {
-  BrowserRouter as Router,
-  Switch,
-  Route,
-  Link,
-  useParams
-} from 'react-router-dom';
+import { Link } from 'react-router-dom';
+import useInitialState from '../hooks/useInitialState';
 
 import '../assets/styles/components/CountriesPopulYear.scss'
 
@@ -15,6 +10,7 @@ export const CountriesPopulYear = ({ data }) => {
       <strong>Country</strong>
       <strong>Population</strong>
       <strong>Yearly Change</strong>
+      {console.log('data:', data)}
       {data.map(ctry => (
         <div className='country_info'>
           <Link to={`countries/${ctry._id}`} key={ctry._id}>
