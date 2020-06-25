@@ -1,11 +1,17 @@
-"use strict";
+'use strict';
 
-const error = require("../controller/error");
+const error = require('../controller/error');
 
 module.exports = [
   {
-    method: "*",
-    path: "/{any*}",
+    config: {
+      cors: {
+        origin: ['*'],
+        additionalHeaders: ['cache-control', 'x-requested-with'],
+      },
+    },
+    method: '*',
+    path: '/{any*}',
     handler: error.notFound,
   },
 ];

@@ -1,41 +1,77 @@
-"use strict";
+'use strict';
 
-const continent = require("../controller/continent");
+const continent = require('../controller/continent');
 
 module.exports = [
   // Agregar el continente
   {
-    method: "POST",
-    path: "/continents",
+    config: {
+      cors: {
+        origin: ['*'],
+        additionalHeaders: ['cache-control', 'x-requested-with'],
+      },
+    },
+    method: 'POST',
+    path: '/continents',
     handler: continent.createContinent,
   },
   // Listar los continentes
   {
-    method: "GET",
-    path: "/continents",
+    config: {
+      cors: {
+        origin: ['*'],
+        additionalHeaders: ['cache-control', 'x-requested-with'],
+      },
+    },
+    method: 'GET',
+    path: '/continents',
     handler: continent.getAllContinents,
   },
   // Buscar un continente por su id
   {
-    method: "GET",
-    path: "/continents/{id}",
+    config: {
+      cors: {
+        origin: ['*'],
+        additionalHeaders: ['cache-control', 'x-requested-with'],
+      },
+    },
+    method: 'GET',
+    path: '/continents/{id}',
     handler: continent.getContinent,
   },
   // Editar un continente por su id
   {
-    method: "PUT",
-    path: "/continents/{id}",
+    config: {
+      cors: {
+        origin: ['*'],
+        additionalHeaders: ['cache-control', 'x-requested-with'],
+      },
+    },
+    method: 'PUT',
+    path: '/continents/{id}',
     handler: continent.editContinent,
   },
   // Eliminar un continente por su id
   {
-    method: "DELETE",
-    path: "/continents/{id}",
+    config: {
+      cors: {
+        origin: ['*'],
+        additionalHeaders: ['cache-control', 'x-requested-with'],
+      },
+    },
+    method: 'DELETE',
+    path: '/continents/{id}',
     handler: continent.deleteContinent,
   },
   {
-    method: "GET",
-    path: "/continent_countries/{continent}",
+    config: {
+      cors: {
+        origin: ['*'],
+        additionalHeaders: ['cache-control', 'x-requested-with'],
+      },
+    },
+    method: 'GET',
+    path: '/continent_countries/{continent}',
     handler: continent.query,
   },
 ];
