@@ -21,7 +21,7 @@ const topCountriesSchema = new Schema(
   },
   {
     timestamps: true,
-  }
+  },
 );
 
 module.exports = model('top-countries', topCountriesSchema);
