@@ -19,7 +19,8 @@
       color: #9A9A9A;
     }
     a:hover {
-      background-color: $thrid-color;
+      background-color: $gray;
+      color: black;
     }
     ul li ul {
       display: none;
@@ -32,7 +33,7 @@
   @include media(desktop-s){
     grid-area: left;
     .header__menuCSS3{
-      height: 100vh;
+      height: 100%;
         ul {
         display: block;
         }
