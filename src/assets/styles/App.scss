@@ -24,7 +24,7 @@ body {
   @include media(desktop-s){
 		// background-color: red;
     display: grid;
-    grid-template: 1fr 100px / auto 1fr;
+    grid-template: 1fr 100px / 180px 1fr;
     overflow: auto;
     // height: 100vh;
     grid-template-areas: "left contenido"

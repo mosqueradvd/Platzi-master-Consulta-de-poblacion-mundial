@@ -4,38 +4,49 @@
 
 
 form {
+  display: inline-block;
+  width: 100vw;
+  height: 420px;
   color: black;
   padding: 1.5em;
-  display: inline-block;
-  width: 470px;
+  background-color: $second-color;
+  
   h2 {
     font-size: 24px;
+    margin-bottom: 50px;
   }
   input {
-    border-radius: 4px;
+    
     height: 25px;
+    width: 50%;
     padding: 5px 10px;
+    border-radius: 4px;
     outline: none;
-    border: none;
-    display: block;
-    width: 85%;
-    margin: 1.5em;
-    border-bottom: 2px solid greenyellow;
+    
+    border: 1px solid $gray;
+    margin-bottom: 10px;
   }
   button {
     border: none;
     border-radius: 3px;
     width: 50%;
     height: 26px;
-    color: #3d5f0a;
+    color: $font-color;
     margin-top: 1em;
-    background-color: #c1f572;
+    background-color:$gray;
+    &:hover{
+    background-color: $font-color;
+    color:$main-color; 
+    cursor: pointer;
+    margin-bottom: 30px;
+    }
   }
   textarea {
-    width: 100%;
-    border: none;
+    width: 50%;
+     border: 1px solid $gray;
     padding: 10px 4px;
     height: 137px;
     margin: 0px;
   }
 }
+
