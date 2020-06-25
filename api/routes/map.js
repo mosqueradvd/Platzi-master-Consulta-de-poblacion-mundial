@@ -7,7 +7,7 @@ module.exports = [
   {
     method: 'POST',
     path: '/addmap',
-    handler: topMap.createMap,
+    handler: map.createMap,
   },
   // Listar los datos del mapa
   {
