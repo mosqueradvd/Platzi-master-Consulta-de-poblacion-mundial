@@ -7,7 +7,7 @@ import '../assets/styles/components/Form.scss';
 const Form = () => {
   return (
     <>
-      <form id='#contact'>
+      <form>
         <h2>
           {' '}
           <AiFillMail />

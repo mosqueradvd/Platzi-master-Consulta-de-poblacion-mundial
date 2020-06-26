@@ -10,6 +10,7 @@ import {
   AiOutlineHome,
 } from 'react-icons/ai';
 import logo from '../assets/static/populApp.png';
+import { HashLink as Link } from 'react-router-hash-link';
 
 const Header = () => {
   return (
@@ -18,35 +19,35 @@ const Header = () => {
         <img src={logo} alt="logo" />
         <ul>
           <li>
-            <a href="#popul">
+            <Link to="#section-first">
               <AiOutlineHome />
               Menu
-            </a>
+            </Link>
             <ul>
               <li>
-                <a href="#statistics">
+                <Link to="#section-first">
                   <AiFillSignal /> Statistics
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="#topten">
+                <Link to="#section-first">
                   <AiFillTrophy /> Top 10
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="#wstats">
+                <a href="#section-second">
                   <AiOutlineDotChart /> World Statistics
                 </a>
               </li>
               <li>
-                <a href="#map">
+                <Link to="#map">
                   <AiFillEnvironment /> Map
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="#contact">
+                <Link to="#contact">
                   <AiFillMail /> Contact
-                </a>
+                </Link>
               </li>
             </ul>
           </li>

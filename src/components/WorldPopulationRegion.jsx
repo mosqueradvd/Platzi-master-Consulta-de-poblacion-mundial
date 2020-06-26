@@ -60,7 +60,7 @@ const WorldPopulationRegion = ({ data }) => {
   return (
     <div className="contaninerChart">
       <div>
-        <h2>Chart WorldPopulation by Region</h2>
+        <h2>CHART WORLDPOPULATION BY REGION</h2>
       </div>
       <div
         className="contaninerChart__table"
