@@ -31,6 +31,7 @@ const App = () => {
       <div className='container'>
         <Header />
         <TopTenBoard>
+          <TopCountriesFlag data={initialState} />
           <TopTenCountriesChart data={initialState} />
           <WorldPopulationRegion data={initialStateApiContinents} />
           <CountriesPopulYear data={initialStateCountries} />
