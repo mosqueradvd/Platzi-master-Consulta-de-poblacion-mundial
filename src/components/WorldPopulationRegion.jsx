@@ -60,31 +60,36 @@ const WorldPopulationRegion = ({ data }) => {
   {/* console.log(`dataArray -> ${dataArray}`); */}
 
   return (
-    <div className='cambiarNombreDeClase'>
-      <div style={{ width: '100%', height: 500 }}>
-        <h1>Chart WorldPopulation by Region</h1>
-          <ResponsiveContainer>
-            <BarChart
-              /* width={900}
+    <div className="contaninerChart">
+      <div>
+        <h2>Chart WorldPopulation by Region</h2>
+      </div>
+      <div
+        className="contaninerChart__table"
+        
+      >
+        <ResponsiveContainer>
+          <BarChart
+            /* width={900}
               height={500} */
-              data={dataArray}
-              margin={{ top: 50, right: 30, left: 40, bottom: 5 }}
-            >
-              <CartesianGrid strokeDasharray="3 3" />
-              <XAxis dataKey="continent" />
-              <YAxis />
-              <Tooltip />
-              <Legend />
-              <Bar
-                dataKey="Population"
-                fill="#82ca9d"
-                background={{ fill: "#eee" }}
-                label={{ position: 'top' }}
-              />
-              {/* <Bar dataKey="uv" fill="#82ca9d" /> */}
-            </BarChart>
-          </ResponsiveContainer>
-        </div>
+            data={dataArray}
+            margin={{ top: 50, right: 30, left: 40, bottom: 5 }}
+          >
+            <CartesianGrid strokeDasharray="3 3" />
+            <XAxis dataKey="continent" />
+            <YAxis />
+            <Tooltip />
+            <Legend />
+            <Bar
+              dataKey="Population"
+              fill="#82ca9d"
+              background={{ fill: "#eee" }}
+              label={{ position: "top" }}
+            />
+            {/* <Bar dataKey="uv" fill="#82ca9d" /> */}
+          </BarChart>
+        </ResponsiveContainer>
+      </div>
     </div>
   );
 };
