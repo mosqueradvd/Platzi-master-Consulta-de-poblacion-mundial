@@ -1,7 +1,7 @@
 import React from 'react';
 import '../assets/styles/components/TopCountriesFlag.scss';
 
-const TopTenBoard = ({ data }) => {
+const TopCountriesFlag = ({ data }) => {
 
   return (
     <>
@@ -42,4 +42,4 @@ const TopTenBoard = ({ data }) => {
   );
 };
 
-export default TopTenBoard;
+export default TopCountriesFlag;

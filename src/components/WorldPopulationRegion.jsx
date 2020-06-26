@@ -54,8 +54,6 @@ const WorldPopulationRegion = ({ data }) => {
     console.log(otra);
   }); */
 
-
-
   /* console.log('dataArray'); */
   {/* console.log(`dataArray -> ${dataArray}`); */}
 
