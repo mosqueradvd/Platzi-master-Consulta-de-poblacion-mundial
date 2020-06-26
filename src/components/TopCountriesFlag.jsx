@@ -37,4 +37,5 @@ const TopTenBoard = ({ data }) => {
     </>
   );
 };
+
 export default TopTenBoard;

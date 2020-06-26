@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import ReactTooltip from "react-tooltip";
+import ReactTooltip from 'react-tooltip';
 import Header from '../components/Header';
 import TopTenBoard from '../components/TopTenBoard';
 import TopCountriesFlag from '../components/TopCountriesFlag';
@@ -10,17 +10,17 @@ import Form from '../components/Form';
 import WorldPopulationDensity from '../components/WorldPopulationDensity';
 import Footer from '../components/Footer';
 import useInitialState from '../hooks/useInitialState';
-import hook from '../hooks/useInitialState';
 
 import '../assets/styles/App.scss';
 
 const API = 'https://populations.hectormartinezresendiz.now.sh/v1/topcountries';
-const API2 = 'https://populations.hectormartinezresendiz.now.sh/v1/countries';
+const apiCountries =
+  'https://populations.hectormartinezresendiz.now.sh/v1/countries';
 
 const App = () => {
-
   const initialState = useInitialState(API);
-  const [content, setContent] = useState("");
+  const initialStateCountries = useInitialState(apiCountries);
+  const [content, setContent] = useState('');
 
   return (
     <>
@@ -29,7 +29,7 @@ const App = () => {
         <TopTenBoard>
           <TopTenCountriesChart data={initialState} />
           <WorldPopulationRegion />
-          <CountriesPopulYear data={initialState} />
+          <CountriesPopulYear data={initialStateCountries} />
           <div>
             <WorldPopulationDensity setTooltipContent={setContent} />
             <ReactTooltip>{content}</ReactTooltip>
