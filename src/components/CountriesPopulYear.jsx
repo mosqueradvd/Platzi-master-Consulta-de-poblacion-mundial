@@ -10,13 +10,13 @@ import '../assets/styles/components/CountriesPopulYear.scss';
 const CountriesPopulYear = ({ data }) => {
 
   // el data.length es para precenir que salga el error de map is not a function o similares.
-  return data.length === 0 ? <h1>cargando</h1> : (
+  return data.length === 0 ? (
+    <h1>cargando</h1>
+  ) : (
     <>
-      <table className='table--big'>
+      <table className="table--big">
         <caption>
-          <strong>Country</strong>
-          <strong>Population</strong>
-          <strong>Yearly Change</strong>
+          <h2>COUNTRIES POPULATION YEARLY DEPENDENCY (2020)</h2>
         </caption>
         <thead>
           <tr>
@@ -30,7 +30,11 @@ const CountriesPopulYear = ({ data }) => {
           {data.items.map((ctry) => {
             return (
               <tr>
-                <th><Link to={`countries/${ctry._id}`} key={ctry._id}>{ ctry.country }</Link></th>
+                <th>
+                  <Link to={`countries/${ctry._id}`} key={ctry._id}>
+                    {ctry.country}
+                  </Link>
+                </th>
                 <th>{ctry.years[0].population}</th>
                 <th>{ctry.years[0].yearlyChangePercen}</th>
                 <th>{ctry.years[0].density}</th>
