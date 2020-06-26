@@ -38,7 +38,7 @@ const App = () => {
             <WorldPopulationDensity setTooltipContent={setContent} />
             <ReactTooltip>{content}</ReactTooltip>
           </div>
-          <TopCountriesFlag data={initialState} />
+
           <Form />
         </TopTenBoard>
         <Footer />
