@@ -1,0 +1,14 @@
+@import '../App.scss';
+@import '../Vars.scss';
+@import '../Breackpoints.scss';
+
+.contaninerChart{
+  display: flex;
+  flex-direction: column;
+  &__table{
+    width: 500px;
+    height: 500px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    border-radius: 5px;
+  }
+}

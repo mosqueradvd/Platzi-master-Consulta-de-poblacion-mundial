@@ -14,12 +14,12 @@ body {
   // background-color: blue;
   height: 100vh;
   display: grid;
-    grid-template: auto 1fr 100px /1fr;
-    overflow: auto;
-    height: 100vh;
-    grid-template-areas: "left"
-                         "contenido"
-                         "footer";
+  grid-template: auto 1fr 100px /1fr;
+  overflow: auto;
+  height: 100vh;
+  grid-template-areas: "left"
+                        "contenido"
+                        "footer";
                          
   @include media(desktop-s){
 		// background-color: red;
@@ -30,12 +30,18 @@ body {
     grid-template-areas: "left contenido"
                          "left footer";
     &__first{
-    
+    // background-color: red;
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
-    
    }
+   &__second{
+    //  background-color: yellow;
+     display: flex;
+     justify-content: space-around;
+     align-items: center;
+   }
+
   }
  
 }
