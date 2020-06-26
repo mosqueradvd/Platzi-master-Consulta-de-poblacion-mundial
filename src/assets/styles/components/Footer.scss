@@ -5,20 +5,26 @@
   grid-area: footer;
   // width: 1600px;
   height: 100px;
-  display: flex;
-  align-self: center;
-  justify-content: center;
+  
   flex-direction: column;
   font-size: 1.2em;
   text-align: center;
   background-color: $second-color;
   color: $font-color;
   box-shadow: 0px -5px 5px 0px rgba(199,199,199,1);
-
-  @include media(desktop-s){
-    
+  &__text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
-
-  
+  &__bootomUp{
+    
+    text-align: right;
+    margin-right: 50px;
+    color: $graphics;
+    font-size: 30px;
+      
+  }
 }
 

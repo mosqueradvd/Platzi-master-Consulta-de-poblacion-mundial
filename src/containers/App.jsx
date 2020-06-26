@@ -31,21 +31,22 @@ const App = () => {
       <div className="container">
         <Header />
         <TopTenBoard>
-          <div className="container__first">
+          <div className="container__first" id='section-first'>
             <TopCountriesFlag data={initialState} />
             <TopTenCountriesChart data={initialState} />
           </div>
-          <div className="container__second">
+          <div className="container__second" id='section-second'>
             <CountriesPopulYear data={initialStateCountries} />
             <WorldPopulationRegion data={initialStateApiContinents} />
           </div>
 
-          <div className='container__third'>
+          <div className="container__third" id='map'>
             <WorldPopulationDensity setTooltipContent={setContent} />
             <ReactTooltip>{content}</ReactTooltip>
           </div>
-
-          <Form />
+          <div id="contact">
+            <Form />
+          </div>
         </TopTenBoard>
         <Footer />
       </div>
