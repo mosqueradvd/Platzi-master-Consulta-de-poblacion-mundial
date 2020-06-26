@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import ReactTooltip from "react-tooltip";
+import ReactTooltip from 'react-tooltip';
 import Header from '../components/Header';
 import TopTenBoard from '../components/TopTenBoard';
 import TopCountriesFlag from '../components/TopCountriesFlag';
@@ -20,21 +20,24 @@ const API2 = 'https://populations.hectormartinezresendiz.now.sh/v1/countries';
 const App = () => {
 
   const initialState = useInitialState(API);
-  const [content, setContent] = useState("");
+  const [content, setContent] = useState('');
 
   return (
     <>
       <div className='container'>
         <Header />
         <TopTenBoard>
-          <TopTenCountriesChart data={initialState} />
+          <div className='container__first'>
+            <TopTenCountriesChart data={initialState} />
+            <TopCountriesFlag data={initialState} />
+          </div>
           <WorldPopulationRegion />
           <CountriesPopulYear data={initialState} />
           <div>
             <WorldPopulationDensity setTooltipContent={setContent} />
             <ReactTooltip>{content}</ReactTooltip>
           </div>
-          <TopCountriesFlag data={initialState} />
+
           <Form />
         </TopTenBoard>
         <Footer />

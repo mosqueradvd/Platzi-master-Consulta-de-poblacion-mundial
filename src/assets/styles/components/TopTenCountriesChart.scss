@@ -3,9 +3,23 @@
 @import '../Breackpoints.scss';
 
 
-.wrappChart{
-  background-color: $main-color;
+
+.contenedorCountries{
+  margin-top: 30px;
+  margin-left: 10px;
+  margin-right: 10px;
   grid-area: contenido;
-  text-align: center;
+  width: 90%;
+  @include media(desktop-s){
+     width: 60%;
+  }
+}
+
+.wrappChart{
+  margin-bottom: 60px;
+  height: 500px;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  border-radius: 5px;
+  
 }
 

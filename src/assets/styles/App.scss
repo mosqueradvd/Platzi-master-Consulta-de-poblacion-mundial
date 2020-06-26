@@ -29,5 +29,13 @@ body {
     // height: 100vh;
     grid-template-areas: "left contenido"
                          "left footer";
-	}
+    &__first{
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+   }
+  }
+ 
 }
