@@ -17,9 +17,13 @@ const API = 'https://populations.hectormartinezresendiz.now.sh/v1/topcountries';
 const apiCountries =
   'https://populations.hectormartinezresendiz.now.sh/v1/countries';
 
+const apiContinents = 'https://populations.hectormartinezresendiz.now.sh/v1/continents';
+
+
 const App = () => {
   const initialState = useInitialState(API);
   const initialStateCountries = useInitialState(apiCountries);
+  const initialStateApiContinents = useInitialState(apiContinents);
   const [content, setContent] = useState('');
 
   return (
@@ -28,7 +32,7 @@ const App = () => {
         <Header />
         <TopTenBoard>
           <TopTenCountriesChart data={initialState} />
-          <WorldPopulationRegion />
+          <WorldPopulationRegion data={initialStateApiContinents} />
           <CountriesPopulYear data={initialStateCountries} />
           <div>
             <WorldPopulationDensity setTooltipContent={setContent} />

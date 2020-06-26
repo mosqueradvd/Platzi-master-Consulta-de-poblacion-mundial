@@ -7,7 +7,7 @@ const TopTenBoard = ({ data }) => {
     <>
       <div className='table'>
         <table>
-          <caption>TOP 10 LARGEST COUNTRIESBY POPULATION</caption>
+          <caption>TOP 10 LARGEST COUNTRIES BY POPULATION</caption>
           <thead>
             <tr>
               <th className='no'>No</th>

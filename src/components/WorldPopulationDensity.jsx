@@ -7,8 +7,7 @@ import {
   Geography,
 } from "react-simple-maps";
 
-const geoUrl =
-  "https://raw.githubusercontent.com/zcreativelabs/react-simple-maps/master/topojson-maps/world-110m.json";
+const geoUrl =  "https://raw.githubusercontent.com/zcreativelabs/react-simple-maps/master/topojson-maps/world-110m.json";
 
 const rounded = (num) => {
   if (num > 1000000000) {
@@ -30,7 +29,8 @@ const WorldPopulationDensity = ({ setTooltipContent }) => {
           height={400}
           style={{ width: "100%", height: "auto" }} 
         >
-          <ZoomableGroup disablePanning zoom={1}>
+          {/* <ZoomableGroup zoom={1} disablePanning> */}
+          <ZoomableGroup >
             <Geographies geography={geoUrl}>
               {({ geographies }) =>
                 geographies.map((geo) => (

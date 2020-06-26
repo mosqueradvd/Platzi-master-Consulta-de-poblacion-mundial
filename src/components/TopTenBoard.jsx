@@ -5,7 +5,6 @@ import '../assets/styles/components/TopTenBoard.scss';
 
 const TopTenBoard = ({ children }) => (
   <div className='topTenBoard'>
-    <h1>working... </h1>
     { children }
   </div>
 );
