@@ -13,9 +13,11 @@ import '../assets/styles/App.scss';
 {/* import PopulByRegion from '../components/PopulByRegion'; */}
 
 const API = 'https://populations.hectormartinezresendiz.now.sh/v1/topcountries';
+const apiContinents = 'https://populations.hectormartinezresendiz.now.sh/v1/continents';
 
 const App = () => {
   const initialState = useInitialState(API);
+  const initialStateApiContinents = useInitialState(apiContinents);
   const [content, setContent] = useState("");
 
   return (
@@ -23,8 +25,8 @@ const App = () => {
         <Header />
         <TopTenBoard>
         <TopCountriesFlag />
-        <TopTenCountriesChart data={initialState} />
-        <WorldPopulationRegion />
+        <TopTenCountriesChart data={ initialState } />
+        <WorldPopulationRegion data={ initialStateApiContinents } />
         <div>
           <WorldPopulationDensity setTooltipContent={ setContent } />
           <ReactTooltip>{content}</ReactTooltip>
