@@ -28,14 +28,19 @@ const App = () => {
 
   return (
     <>
-      <div className='container'>
+      <div className="container">
         <Header />
         <TopTenBoard>
-          <TopCountriesFlag data={initialState} />
-          <TopTenCountriesChart data={initialState} />
-          <WorldPopulationRegion data={initialStateApiContinents} />
-          <CountriesPopulYear data={initialStateCountries} />
-          <div>
+          <div className="container__first">
+            <TopCountriesFlag data={initialState} />
+            <TopTenCountriesChart data={initialState} />
+          </div>
+          <div className="container__second">
+            <CountriesPopulYear data={initialStateCountries} />
+            <WorldPopulationRegion data={initialStateApiContinents} />
+          </div>
+
+          <div className='container__third'>
             <WorldPopulationDensity setTooltipContent={setContent} />
             <ReactTooltip>{content}</ReactTooltip>
           </div>

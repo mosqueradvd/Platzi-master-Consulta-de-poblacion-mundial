@@ -5,35 +5,39 @@ const TopCountriesFlag = ({ data }) => {
 
   return (
     <>
-      <div className='table'>
-        <table>
-          <caption>TOP 10 LARGEST COUNTRIES BY POPULATION</caption>
-          <thead>
-            <tr>
-              <th className='no'>No</th>
-              <th>Flag</th>
-              <th>Country</th>
-              <th>Population</th>
-            </tr>
-          </thead>
-          <tbody>
-            {data.map((ctry) => {
-              if (ctry.rank <= 10) {
-                return (
-                  <tr className='country__container' key={ctry.rank}>
-                    <th>{ctry.rank}</th>
-                    <th>
-                      <img src={ctry.flag} alt={ctry.country} />
-                    </th>
-                    <th>{ctry.country}</th>
-                    <th>{ctry.population}</th>
-                  </tr>
-                );
-              }
-            })}
-          </tbody>
-        </table>
-      </div>
+      <section className="contenedor">
+        <div>
+          <h2>TOP 10 LARGEST COUNTRIESBY POPULATION</h2>
+        </div>
+        <div className="table">
+          <table>
+            <thead>
+              <tr>
+                <th className="table__number">No</th>
+                <th>Flag</th>
+                <th>Country</th>
+                <th>Population</th>
+              </tr>
+            </thead>
+            <tbody>
+              {data.map((ctry) => {
+                if (ctry.rank <= 10) {
+                  return (
+                    <tr className="country__container" key={ctry.rank}>
+                      <th>{ctry.rank}</th>
+                      <th>
+                        <img src={ctry.flag} alt={ctry.country} />
+                      </th>
+                      <th>{ctry.country}</th>
+                      <th>{ctry.population}</th>
+                    </tr>
+                  );
+                }
+              })}
+            </tbody>
+          </table>
+        </div>
+      </section>
     </>
   );
 };
