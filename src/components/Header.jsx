@@ -11,17 +11,9 @@ import {
 } from 'react-icons/ai';
 import logo from '../assets/static/populApp.png';
 
-{ /* import logo from '../assets/static/react.svg'; */ }
-
 const Header = () => {
   return (
     <header className="header">
-      {/* <h1 className='header__title'>
-      
-      Menu
-    </h1> */}
-      {/* <h1>World Population</h1> */}
-
       <nav className="header__menuCSS3">
         <img src={logo} alt="logo" />
         <ul>
