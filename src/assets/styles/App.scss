@@ -20,6 +20,7 @@ body {
   grid-template-areas: "left"
                         "contenido"
                         "footer";
+  
                          
   @include media(desktop-s){
 		// background-color: red;
@@ -36,7 +37,6 @@ body {
     align-items: center;
    }
    &__second{
-    //  background-color: yellow;
      display: flex;
      justify-content: space-around;
      align-items: center;
