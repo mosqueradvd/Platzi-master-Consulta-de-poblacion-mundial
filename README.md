@@ -59,7 +59,7 @@ En este caso, Populapp brinda una **presentación de datos más fresca y digerib
 
 - **BABEL** (transpilación) para lograr un correcto funcionamiento de la app a través de diferentes navegadores.
 
-- **React-Router** para menejo de rutas dentro de la app.
+- **React-Router** para manejo de rutas dentro de la app.
 
 <br></br>
  ### **Documentación de la API**
